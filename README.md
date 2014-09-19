@@ -2,6 +2,8 @@
 
 Twitter **B**ootstrap **A**dmin/**D**ashboard template
 
+[Click here for demo](http://pengux.github.io/bad/dist/)
+
 A highly customisable template built using the following components/technologies:
 
 - [Twitter Bootstrap 3](http://getbootstrap.com/)
@@ -41,4 +43,3 @@ To customise the template, edit the following files:
 - `app/styles/_variables.scss` - Modifications of the variables should be enough to create a different theme)
 - `app/styles/main.scss` - Changes to layout may need to be applied here)
 - `app/styles/components/*` - Modify these files to your liking if you need to
-- `app/index.html` - If you need to modify the HTML code
