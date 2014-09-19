@@ -105,18 +105,20 @@ body {
       }
 
       .aside-toggle {
-        padding: $padding-small $padding-small $padding-small $padding-big;
+        padding: $padding-small $padding-base;
         background: transparent;
         border: 0;
         margin-left: -$padding-base;
         height: $navbar-height;
         outline: none;
+        position: relative;
 
         &:after {
           @extend .fa;
           content: "\f0d9";
-          left: -28px;
-          position: relative;
+          left: 10px;
+          top: 18px;
+          position: absolute;
         }
       }
 
@@ -129,18 +131,22 @@ body {
       }
 
       form[role="search"] {
-        button {
-          padding: $padding-xs;
-          background-color: transparent;
-          background-image: none;
-          border: 0;
-          color: #fff;
+        .form-group {
+          font-size: 0;
 
-          &:hover {
+          button {
+            padding: $padding-xs;
             background-color: transparent;
             background-image: none;
             border: 0;
             color: #fff;
+
+            &:hover {
+              background-color: transparent;
+              background-image: none;
+              border: 0;
+              color: #fff;
+            }
           }
         }
       }
@@ -170,7 +176,7 @@ body {
         }
 
         .aside-toggle:after {
-          left: 0;
+          left: 39px;
           content: "\f0da";
         }
 
