@@ -1,0 +1,26 @@
+.panel {
+  border: $panel-border;
+  margin-bottom: 0;
+
+  .panel-heading {
+    border-top: $panel-heading-border-top;
+    border-bottom: 1px solid $gray-lighter;
+    color: $panel-heading-color;
+
+    .panel-title {
+      @extend .h2;
+      margin: 0;
+      font-weight: $panel-heading-weight;
+
+      font-size: $font-size-large;
+    }
+
+    h1, h2, h3, h4, h5, h6 {
+      @extend .panel-title;
+    }
+  }
+
+  header {
+    @extend .panel-heading;
+  }
+}

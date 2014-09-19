@@ -1,0 +1,98 @@
+// Colors
+$color-primary: #00B4CC !default;
+$color-primary-light: #00DFFC !default;
+$color-primary-dark: #008C9E !default;
+
+$gray-darker:            lighten(#000, 13.5%) !default; // #222
+$gray-dark:              lighten(#000, 20%) !default;   // #333
+$gray:                   lighten(#000, 33.5%) !default; // #555
+$gray-light:             lighten(#000, 46.7%) !default; // #777
+$gray-lighter:           lighten(#000, 93.5%) !default; // #eee
+
+$padding-base: 15px !default;
+$padding-small: 10px !default;
+$padding-xs: 5px !default;
+$padding-big: 20px !default;
+
+// Defining animation easings
+$animation-easing: cubic-bezier(0.455, 0.030, 0.515, 0.955) !default;
+
+/* Override Bootstrap's variables */
+$brand-primary: $color-primary !default;
+$body-bg: $gray-lighter !default;
+$text-color: $gray !default;
+
+$font-family-base: 'Asap', serif !default;
+$headings-font-weight: 700 !default;
+$font-size-base: 14px !default;
+
+// Navbars
+$navbar-default-bg: #343838 !default;
+$navbar-default-color: $gray-lighter !default;
+
+$navbar-default-link-color:                $gray-lighter !default;
+$navbar-default-link-hover-color:          #fff !default;
+$navbar-default-link-hover-bg:             transparent !default;
+$navbar-default-link-active-color:         #fff !default;
+$navbar-default-link-active-bg:            darken($navbar-default-bg, 6.5%) !default;
+$navbar-default-link-disabled-color:       #ccc !default;
+$navbar-default-link-disabled-bg:          transparent !default;
+
+// Dropdowns
+$dropdown-bg: #343838 !default;
+$dropdown-link-color: $gray-lighter !default;
+$dropdown-link-hover-color: #fff !default;
+$dropdown-link-hover-bg: $gray !default;
+$dropdown-border: $gray !default;
+$dropdown-divider-bg: $gray !default;
+
+$border-radius-base:        2px !default;
+$border-radius-large:       2px !default;
+$border-radius-small:       2px !default;
+
+$input-border: $gray-lighter !default;
+
+// Buttons
+$btn-default-bg:                 #fff !default;
+$btn-default-border:             #ccc !default;
+
+// Panels
+$panel-body-padding: $padding-base !default;
+$panel-heading-color: $color-primary !default;
+$panel-heading-bg: #fff !default;
+$panel-heading-border-top: 3px solid #343838 !default;
+$panel-border: 0 !default;
+$panel-heading-weight: 400 !default;
+
+// Percentage for the gradient base on button color, only apply if value is > 0%
+$btn-gradient-percentage: 5% !default;
+
+/* Components */
+
+// Borders
+$border-primary: 1px solid $color-primary !default;
+$border-primary-light: 1px solid lighten($color-primary, 20%) !default;
+$border-primary-dark: 1px solid darken($color-primary, 20%) !default;
+
+$border-gray: 1px solid $gray !default;
+$border-gray-light: 1px solid $gray-light !default;
+$border-gray-dark: 1px solid $gray-dark !default;
+
+// Box shadow
+$box-shadow: none !default;
+
+// Sidebar
+$sidebar-side: 'left' !default; // left/right
+$sidebar-width: 220px !default;
+$sidebar-bg-color: $color-primary !default;
+$sidebar-text-color: $gray-light !default;
+$sidebar-link-color: lighten($color-primary, 50%) !default;
+$sidebar-link-bg-color: $color-primary !default;
+$sidebar-link-hover-color: #fff !default;
+$sidebar-link-hover-bg-color: $color-primary-light !default;
+$sidebar-submenu-link-color: lighten($color-primary, 50%) !default;
+$sidebar-submenu-link-bg-color: darken($color-primary, 10%) !default;
+$sidebar-submenu-link-hover-color: #fff !default;
+$sidebar-submenu-link-hover-bg-color: darken($color-primary-light, 30%) !default;
+$sidebar-link-transition: background-color .2s ease-out;
+

@@ -1,0 +1,90 @@
+@if $btn-gradient-percentage > 0% {
+  .btn-default {
+    @include gradient-vertical($btn-default-bg, darken($btn-default-bg, $btn-gradient-percentage));
+    &:hover {
+      @include gradient-vertical(darken($btn-default-bg, $btn-gradient-percentage), darken($btn-default-bg, $btn-gradient-percentage * 2));
+    }
+  }
+  .btn-primary {
+    @include gradient-vertical($btn-primary-bg, darken($btn-primary-bg, $btn-gradient-percentage));
+    &:hover {
+      @include gradient-vertical(darken($btn-primary-bg, $btn-gradient-percentage), darken($btn-primary-bg, $btn-gradient-percentage * 2));
+    }
+  }
+  // Success appears as green
+  .btn-success {
+    @include gradient-vertical($btn-success-bg, darken($btn-success-bg, $btn-gradient-percentage));
+    &:hover {
+      @include gradient-vertical(darken($btn-success-bg, $btn-gradient-percentage), darken($btn-success-bg, $btn-gradient-percentage * 2));
+    }
+  }
+  // Info appears as blue-green
+  .btn-info {
+    @include gradient-vertical($btn-info-bg, darken($btn-info-bg, $btn-gradient-percentage));
+    &:hover {
+      @include gradient-vertical(darken($btn-info-bg, $btn-gradient-percentage), darken($btn-info-bg, $btn-gradient-percentage * 2));
+    }
+  }
+  // Warning appears as orange
+  .btn-warning {
+    @include gradient-vertical($btn-warning-bg, darken($btn-warning-bg, $btn-gradient-percentage));
+    &:hover {
+      @include gradient-vertical(darken($btn-warning-bg, $btn-gradient-percentage), darken($btn-warning-bg, $btn-gradient-percentage * 2));
+    }
+  }
+  // Danger and error appear as red
+  .btn-danger {
+    @include gradient-vertical($btn-danger-bg, darken($btn-danger-bg, $btn-gradient-percentage));
+    &:hover {
+      @include gradient-vertical(darken($btn-danger-bg, $btn-gradient-percentage), darken($btn-danger-bg, $btn-gradient-percentage * 2));
+    }
+  }
+}
+
+[am-button] {
+  @extend .btn;
+}
+
+[am-button~="default"] {
+  @extend .btn-default;
+}
+
+[am-button~="primary"] {
+  @extend .btn-primary;
+}
+
+[am-button~="success"] {
+  @extend .btn-success;
+}
+
+[am-button~="info"] {
+  @extend .btn-info;
+}
+
+[am-button~="warning"] {
+  @extend .btn-warning;
+}
+
+[am-button~="danger"] {
+  @extend .btn-danger;
+}
+
+[am-button~="link"] {
+  @extend .btn-link;
+}
+
+[am-button~="lg"] {
+  @extend .btn-lg;
+}
+
+[am-button~="sm"] {
+  @extend .btn-sm;
+}
+
+[am-button~="xs"] {
+  @extend .btn-xs;
+}
+
+[am-button~="block"] {
+  @extend .btn-block;
+}

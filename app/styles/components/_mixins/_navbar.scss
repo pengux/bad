@@ -1,0 +1,20 @@
+@mixin navbar() {
+  @extend .navbar;
+  @extend .navbar-default;
+
+  box-shadow: $box-shadow;
+
+  color: $navbar-default-color;
+
+  .navbar-toggle {
+    padding: $padding-small $padding-base;
+  }
+
+  form {
+
+  }
+
+  img {
+    max-height: 20px;
+  }
+}

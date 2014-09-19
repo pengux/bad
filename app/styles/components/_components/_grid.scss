@@ -1,0 +1,35 @@
+.row {
+  display: flex;
+
+  [class*="col-"] {
+    display: flex;
+
+    & > .panel {
+      flex: 1;
+    }
+  }
+}
+
+[am-row] {
+  @extend .row;
+
+  [am-col] {
+    display: flex;
+
+    & > .panel {
+      flex: 1;
+    }
+  }
+}
+
+@for $i from 1 through 12 {
+  [am-col~="sm:#{$i}"] {
+    @extend .col-sm-#{$i};
+  }
+  [am-col~="md:#{$i}"] {
+    @extend .col-md-#{$i};
+  }
+  [am-col~="lg:#{$i}"] {
+    @extend .col-lg-#{$i};
+  }
+}

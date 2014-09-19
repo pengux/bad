@@ -1,0 +1,19 @@
+[am-alert] {
+  @extend .alert;
+}
+
+[am-alert~="success"] {
+  @extend .alert-success;
+}
+
+[am-alert~="info"] {
+  @extend .alert-info;
+}
+
+[am-alert~="warning"] {
+  @extend .alert-warning;
+}
+
+[am-alert~="danger"] {
+  @extend .alert-danger;
+}

@@ -1,0 +1,27 @@
+[am-label] {
+  @extend .label;
+}
+
+[am-label~="default"] {
+  @extend .label-default;
+}
+
+[am-label~="primary"] {
+  @extend .label-primary;
+}
+
+[am-label~="success"] {
+  @extend .label-success;
+}
+
+[am-label~="info"] {
+  @extend .label-info;
+}
+
+[am-label~="warning"] {
+  @extend .label-warning;
+}
+
+[am-label~="danger"] {
+  @extend .label-danger;
+}

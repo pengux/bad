@@ -1,0 +1,19 @@
+[am-table] {
+  @extend .table;
+}
+
+[am-table~="striped"] {
+  @extend .table-striped;
+}
+
+[am-table~="bordered"] {
+  @extend .table-bordered;
+}
+
+[am-table~="hover"] {
+  @extend .table-hover;
+}
+
+[am-table~="condensed"] {
+  @extend .table-condensed;
+}

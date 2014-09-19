@@ -1,0 +1,77 @@
+@mixin sidebar(
+  $side,
+  $width,
+  $bg-color,
+  $text-color,
+  $link-color,
+  $link-bg-color,
+  $link-hover-color,
+  $link-hover-bg-color,
+  $submenu-link-color,
+  $submenu-link-bg-color,
+  $submenu-link-hover-color,
+  $submenu-link-hover-bg-color,
+  $link-transition,
+  $padding
+) {
+  width: $width;
+  background-color: $bg-color;
+  color: $text-color;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  overflow: auto;
+
+  @if $side == 'right' {
+    right: 0;
+  } @else {
+    left: 0;
+  }
+
+  a {
+    color: $link-color;
+    background-color: $link-bg-color;
+
+    &:hover {
+      color: $link-hover-color;
+    }
+  }
+
+  ul {
+    @extend .list-unstyled;
+
+    li {
+
+      a {
+        display: block;
+        padding: $padding;
+        transition: $link-transition;
+
+        &:hover {
+          color: $link-hover-color;
+          background-color: $link-hover-bg-color;
+        }
+      }
+    }
+  }
+
+  & > ul {
+    > li {
+      ul {
+        li {
+          a {
+            color: $submenu-link-color;
+            background-color: $submenu-link-bg-color;
+
+            &:hover {
+              color: $submenu-link-hover-color;
+              background-color: $submenu-link-hover-bg-color;
+            }
+          }
+        }
+      }
+    }
+  }
+
+}
+
