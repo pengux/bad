@@ -57,6 +57,13 @@
 
   & > ul {
     > li {
+
+      a[data-toggle="collapse-next"] {
+        .fa.pull-right {
+          margin-top: 5px;
+        }
+      }
+
       ul {
         li {
           a {

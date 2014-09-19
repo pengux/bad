@@ -24,13 +24,31 @@
   var aside = querySelector('body > aside');
   var main = querySelector('body > main');
   var asideToggle = querySelector('.aside-toggle');
+  var submenuToggle = querySelector('body > aside a[data-toggle=collapse-next]');
 
   function toggleAside() {
     aside.classList.toggle('collapsed');
     main.classList.toggle('no-aside');
   }
 
+  function toggleSubmenu(ev) {
+    // Change chevron
+    var submenu = ev.target.nextElementSibling;
+    var chevron;
+    submenu.classList.toggle('in');
+    if(submenu.classList.contains('in')) {
+      chevron = ev.target.querySelector('.fa-chevron-right');
+      chevron.classList.remove('fa-chevron-right');
+      chevron.classList.add('fa-chevron-down');
+    } else {
+      chevron = ev.target.querySelector('.fa-chevron-down');
+      chevron.classList.remove('fa-chevron-down');
+      chevron.classList.add('fa-chevron-right');
+    }
+  }
+
   asideToggle.addEventListener('click', toggleAside);
+  submenuToggle.addEventListener('click', toggleSubmenu);
 
   // var body = document.body;
   // var appbarElement = querySelector('.app-bar');
